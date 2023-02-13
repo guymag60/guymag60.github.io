@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Oswald:wght@300&display=swap');
+
+body{
+    padding: 0 ;
+    margin: 0;
+    color: rgb(243, 224, 224);
+    font-family: 'Oswald', sans-serif;
+    background-image: radial-gradient(circle at 46% 40%, rgba(228, 228, 228,0.06) 0%, rgba(228, 228, 228,0.06) 13%,transparent 13%, transparent 100%),radial-gradient(circle at 11% 41%, rgba(198, 198, 198,0.06) 0%, rgba(198, 198, 198,0.06) 19%,transparent 19%, transparent 100%),radial-gradient(circle at 52% 23%, rgba(14, 14, 14,0.06) 0%, rgba(14, 14, 14,0.06) 69%,transparent 69%, transparent 100%),radial-gradient(circle at 13% 85%, rgba(148, 148, 148,0.06) 0%, rgba(148, 148, 148,0.06) 44%,transparent 44%, transparent 100%),radial-gradient(circle at 57% 74%, rgba(232, 232, 232,0.06) 0%, rgba(232, 232, 232,0.06) 21%,transparent 21%, transparent 100%),radial-gradient(circle at 59% 54%, rgba(39, 39, 39,0.06) 0%, rgba(39, 39, 39,0.06) 49%,transparent 49%, transparent 100%),radial-gradient(circle at 98% 38%, rgba(157, 157, 157,0.06) 0%, rgba(157, 157, 157,0.06) 24%,transparent 24%, transparent 100%),radial-gradient(circle at 8% 6%, rgba(60, 60, 60,0.06) 0%, rgba(60, 60, 60,0.06) 12%,transparent 12%, transparent 100%),linear-gradient(90deg, rgb(148, 220, 10),rgb(18, 123, 10));
+
+}
+/* ******************************NAVBAR*************************************** */
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #54ab21;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    font-size: 1.4em;
+    z-index: 99;
+}
+
+nav.profile{
+    display: flex;
+    align-items: center;
+}
+
+.profile{
+    margin-left: 60px;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;  
+}
+
+nav ul li {
+    margin: 0 30px 0 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+}
+
+nav ul li:hover{
+    border-bottom-color: #000;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* ********************************************************************************** */
+
+main{
+    margin: 0 50px;
+}
+
+.capture{
+    width: 50%;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+h2, h3, h4{
+    font-size: 2em;
+}
+
+p{
+    font-size: 1.8em;
+    text-align: justify;
+}
+
+.ancre{
+    color: #c0c0c0;
+}
+
+.ancre:hover{
+    cursor: pointer;
+    transition: 1s;
+    color: red;
+}
+
+.adresse{
+    color: blue;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.adresse:hover{
+    cursor: pointer;
+    transition: .5s;
+    color: red;
+}
+*********************************************************************************************
+img{
+    width: 90%;
+    margin-top: 10px;
+
+}
+
+.images{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.images2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.images img{
+    padding: 30px;
+}
+
+.images2 img{
+    padding: 30px;
+}
+
+/* ****************************************************FOOTER************************************** */
+footer{
+    background-color: #56A71E;
+    height: 130px;
+}
+
+.liens{
+    padding: 15px;
+    font-size: 1.4em;
+    display: flex;
+    justify-content: space-around;
+}
+
+ .copyright p{
+    text-align: center;
+    margin: 0px 0 25px 0;
+}
+
+/* *******************************RESPONSIVE********************************************** */
+@media screen and (max-width: 900px) {
+    nav{
+        justify-content: center;
+    }
+
+    img{
+        min-width: 100%;
+    }
+
+    .images .images2 img{
+        margin: 20px;
+    }
+   
+}
