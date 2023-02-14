@@ -187,6 +187,12 @@ footer{
 @media screen and (max-width: 680px){
     .images2 img{
         min-width: 90%;
+    }    
+}
+
+@media screen and (max-width: 385px){
+    .images{
+        max-width: 40%;
     }
 }
 
