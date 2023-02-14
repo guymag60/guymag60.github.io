@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/contact.css">
 </head>
 <body>
-    <nav>
+    <!-- <nav>
         <div class="profile">
            Guillaume Maguet
         </div>
@@ -18,7 +18,20 @@
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-    </nav>            
+    </nav>             -->
+    <nav class="navbar">
+        <div class="nav-links">
+           <div class="logo">Guillaume Maguet</div>
+           <ul>
+               <li><a href="index.html">Accueil</a></a></li>
+               <li><a href="exp.html">Expériences</a></li>
+               <li><a href="portfolio.html">Portfolio</a></li>
+               <li><a href="contact.html">Contact</a></li>
+           </ul>
+       </div>
+       <img src="assets/images/menu-btn.png" alt="btn" class="menu-burger">
+   </nav> 
+
     <p class="para1"> Vous pouvez me contacter par mail à cette adresse: <br> <a href="mailto:gmaguet@hotmail.com">gmaguet@hotmail.com</a></p>
 
     <p class="para2">Par téléphone: 06 85 06 09 84</p>
@@ -38,4 +51,12 @@
     </footer>
     
 </body>
+<script>
+    const menuHamburger = document.querySelector(".menu-burger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
 </html>

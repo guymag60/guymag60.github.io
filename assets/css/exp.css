@@ -9,7 +9,8 @@ body{
 }
 
 /* ******************************NAVBAR*************************************** */
-nav{
+/*.navbar .nav-links à recopier*/
+.navbar .nav-links{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -22,12 +23,7 @@ nav{
     z-index: 99;
 }
 
-nav.profile{
-    display: flex;
-    align-items: center;
-}
-
-.profile{
+.logo{
     margin-left: 60px;
 }
 
@@ -46,14 +42,28 @@ nav ul li:hover{
     border-bottom-color: #000;
     text-decoration: none;
 }
+
 a{
     text-decoration: none;
     color: white;
 }
 
+.navbar .menu-burger{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;    
+    width: 35px;
+}
+
+.mobile-menu{
+    margin-left: 0;
+
+}
+
 /* ********************************************************************************** */
 main{
-    margin: 0 50px;
+    margin: 0px 50px;
 }
 
 p{
@@ -100,19 +110,83 @@ footer{
 }
 
 /* *******************************RESPONSIVE********************************************** */
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
     nav{
         justify-content: center;
     }
 
     img{
         min-width: 110%;
-    }
+    } */
     /* .images{
        display: flex;
        flex-wrap: wrap;
        align-content: space-around;
     } */
+    
+    
+    @media screen and (max-width: 750px){
+        /* .nav-links{
+            padding: 0;
+        } */
+        
+        main{
+            margin: 100px 40px;
+        }
+        .navbar .logo{
+            position: absolute;
+            top: 50px;
+            left: 35%;
+            
+        }
+     .navbar .menu-burger{
+        display: block;
+        z-index: 2;
+    }
 
+    .navbar .nav-links {
+        position: absolute;
+    }
+
+     .logo{
+        display: none;
+    }
+
+     .navbar .nav-links{
+       top: 0;
+       left: 0;
+       position: absolute;
+       background-color: rgba(255, 255, 255, 0.20);
+       backdrop-filter: blur(7px);
+       width: 100%;
+       height: 100vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-left: -100%;
+       transition: all 0.5s ease;
+       z-index: 1;
+    }
+
+    .nav-links.mobile-menu{
+        margin-left: 0;
+    }
+
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links ul li{
+        margin: 25px 0;
+        font-size: 1.3em;
+    }
+    
+}
+@media screen and (max-width: 680px){
+    .images2 img{
+        min-width: 90%;
+    }
 }
 

@@ -8,19 +8,34 @@
     <link rel="stylesheet" href="assets/css/exp.css">
 </head>
 <body>
-    <nav>
+    <!-- <nav>
         <div class="profile">
            Guillaume Maguet
         </div>
-        <ul>
-            <li><a href="index.html">Accueil</a></a></li>
-            <li><a href="exp.html">Expériences</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Accueil</a></a></li>
+                <li><a href="exp.html">Expériences</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>            
+    <img src="assets/images/menu-btn.png" alt="btn" class="menu-burger">  -->
+     <nav class="navbar">
+         <div class="nav-links">
+            <div class="logo">Guillaume Maguet</div>
+            <ul>
+                <li><a href="index.html">Accueil</a></a></li>
+                <li><a href="exp.html">Expériences</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <img src="assets/images/menu-btn.png" alt="btn" class="menu-burger">
+    </nav> 
 
-    <main>
+     <main>
         
         <h1>Expériences extra-professionnelles.</h1>
         <p><u>Compétences rédactionnelles.</u> <br>
@@ -65,5 +80,12 @@
         </footer>
 
 </body>
-    
-</html>
+<script>
+    const menuHamburger = document.querySelector(".menu-burger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html> 
