@@ -192,7 +192,8 @@ footer{
 
 @media screen and (max-width: 385px){
     .images{
-        max-width: 25%;
+        max-width: auto;
+        margin: auto;
     }
 }
 
