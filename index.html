@@ -8,60 +8,63 @@
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
-    <nav>
-        <div class="profile">
-           Guillaume Maguet
-        </div>
-        <ul>
-            <li><a href="index.html"></a> Accueil</a></li>
-            <li><a href="exp.html">Expériences</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar">
+        <div class="nav-links">
+           <div class="logo">Guillaume Maguet</div>
+           <ul>
+               <li><a href="index.html">Accueil</a></a></li>
+               <li><a href="exp.html">Expériences</a></li>
+               <li><a href="portfolio.html">Portfolio</a></li>
+               <li><a href="contact.html">Contact</a></li>
+           </ul>
+       </div>
+       <img src="assets/images/menu-btn.png" alt="btn" class="menu-burger">
+   </nav> 
 
-    <section class="photo-profil">
-        <img src="./assets/images/Avatar-Maker.png" alt="">
-    </section>
-    <section class="page-content">
-        <header>
-            <h1>Guillaume MAGUET <br> 
-                Développeur  front end <br></h1>
-                <p class="title">formation en cours de <a href="https://lamanu.fr/formations/formation-developpeur-web-mobile/" target="_blank" >Développeur Web </a>afin de poursuivre vers <a href="https://lamanu.fr/alternance/formation-concepteur-designer-ui/" target="_blank" > Concepteur designer UI</a> </p>
-
-            <p class="first" >Guillaume MAGUET. <br>
-                né le 25/07/1972 <br>
-                Habite à Margny Les Compiègne <br>
-                Apprenant à l'école des métiers du numérique La Manu. <br></p>
-                
-                <p>Après avoir passé quelques années dans la réparation automobile puis de nombreuses autres en intérim dans l'industrie j'ai décidé de me réorienter vers le développement web. Vous trouverez dans la rubrique Porfolio deux sites que j'ai réalisé dont l'un avant le début de la formation.</p>         
-           
-                
-                <a href="contact.html" class="button">Contactez-moi</a>
-          </header>
-
-        <section class="presentation-image">
-            <!-- <img src="./assets/images/background-5060836_1920.jpg" alt=""> -->
+    <main>
+        <section class="photo-profil">
+            <img src="./assets/images/Avatar-Maker.png" alt="">
         </section>
-        
-        <h2>Languages et outils utilisés</h2>
-        <section class="projects-section">
-            <div class="logos">
-                <img src="./assets/images/logos/HTML5_logo_and_wordmark.svg.png" alt="">
-                <img src="./assets/images/logos/CSS3_logo_and_wordmark.svg.png" alt="">
-                <img src="./assets/images/logos/javascript-logo-transparent-logo-javascript-images-3.png" alt="">
-                <img src="./assets/images/logos/PHP-logo.svg.png" alt="">
-                <img src="./assets/images/logos/MySQL-Logo.png" alt="">
-                <img src="./assets/images/logos/logo-bootstrap.png" alt="">
-
-            </div>
-
-            <div class="logos2">
-                <img src="./assets/images/logos/WordPress-Logo.png" alt="">
-                <img src="./assets/images/logos/vs code.png" alt="">
-            </div>
+        <section class="page-content">
+            <header>
+                <h1>Guillaume MAGUET <br> 
+                    Développeur  front end <br></h1>
+                    <p class="title">formation en cours de <a href="https://lamanu.fr/formations/formation-developpeur-web-mobile/" target="_blank" >Développeur Web </a>afin de poursuivre vers <a href="https://lamanu.fr/alternance/formation-concepteur-designer-ui/" target="_blank" > Concepteur designer UI</a> </p>
+    
+                <p class="first" >Guillaume MAGUET. <br>
+                    né le 25/07/1972 <br>
+                    Habite à Margny Les Compiègne <br>
+                    Apprenant à l'école des métiers du numérique La Manu. <br></p>
+                    
+                    <p>Après avoir passé quelques années dans la réparation automobile puis de nombreuses autres en intérim dans l'industrie j'ai décidé de me réorienter vers le développement web. Vous trouverez dans la rubrique Porfolio deux sites que j'ai réalisé dont l'un avant le début de la formation.</p>         
+               
+                    
+                    <a href="contact.html" class="button">Contactez-moi</a>
+              </header>
+    
+            <section class="presentation-image">
+                <!-- <img src="./assets/images/background-5060836_1920.jpg" alt=""> -->
+            </section>
+            
+            <h2>Languages et outils utilisés</h2>
+            <section class="projects-section">
+                <div class="logos">
+                    <img src="./assets/images/logos/HTML5_logo_and_wordmark.svg.png" alt="">
+                    <img src="./assets/images/logos/CSS3_logo_and_wordmark.svg.png" alt="">
+                    <img src="./assets/images/logos/javascript-logo-transparent-logo-javascript-images-3.png" alt="">
+                    <img src="./assets/images/logos/PHP-logo.svg.png" alt="">
+                    <img src="./assets/images/logos/MySQL-Logo.png" alt="">
+                    <img src="./assets/images/logos/logo-bootstrap.png" alt="">
+    
+                </div>
+    
+                <div class="logos2">
+                    <img src="./assets/images/logos/WordPress-Logo.png" alt="">
+                    <img src="./assets/images/logos/vs code.png" alt="">
+                </div>
+            </section>
         </section>
-    </section>
+    </main>
     
     <footer>       
         <div class="liens">
@@ -78,4 +81,12 @@
     </footer>
     
 </body>
+<script>
+    const menuHamburger = document.querySelector(".menu-burger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
 </html>

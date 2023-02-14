@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="assets/css/portfolio.css">
 </head>
 <body>
-    <nav>
-        <div class="profile">
-           Guillaume Maguet
-        </div>
-        <ul>
-            <li><a href="index.html">Accueil</a></a></li>
-            <li><a href="exp.html">Expériences</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>        
+    <nav class="navbar">
+        <div class="nav-links">
+           <div class="logo">Guillaume Maguet</div>
+           <ul>
+               <li><a href="index.html">Accueil</a></a></li>
+               <li><a href="exp.html">Expériences</a></li>
+               <li><a href="portfolio.html">Portfolio</a></li>
+               <li><a href="contact.html">Contact</a></li>
+           </ul>
+       </div>
+       <img src="assets/images/menu-btn.png" alt="btn" class="menu-burger">
+   </nav> 
+
 
    <main>
     <h1> Projets</h1>
@@ -55,9 +57,9 @@
         <img src="./assets/images/portfolio/DSC_5357nx.jpg" alt="light painting">
     </div>
 
-    <div class="images2">
-        <img src="./assets/images/portfolio/DSC4630.JPG" alt="205">
-        <img src="./assets/images/portfolio/DSC_1970.JPG" alt="bus">
+    <div class="images3">
+        <img src="./assets/images/portfolio/DSC4630.JPG"  alt="205">
+        <img src="./assets/images/portfolio/DSC_1970.JPG"  alt="bus">
     </div>
 </main>
 
@@ -77,4 +79,12 @@
 
     
 </body>
+<script>
+    const menuHamburger = document.querySelector(".menu-burger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
 </html>

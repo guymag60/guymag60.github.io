@@ -51,7 +51,7 @@ a{
     display: none;
     position: absolute;
     top: 50px;
-    right: 50px;    
+    right: 25px;    
     width: 35px;
 }
 
@@ -104,23 +104,6 @@ p{
 }
 /* **************************************RESPONSIVE********************************* */
 
-/* @media screen and (max-width: 700px){
-
-    nav{
-        justify-content: center;
-    }
-
-    .para1{
-        text-align:center;
-        margin: 50px;
-    }
-
-    p{
-        margin-left: 25px;
-        text-align: center;
-    }
-} */
-
 @media screen and (max-width: 750px){
     /* .nav-links{
         padding: 0;
@@ -148,6 +131,11 @@ p{
 
  .logo{
     display: none;
+}
+
+li a{
+    color: red;
+    font-weight: bold;
 }
 
  .navbar .nav-links{
