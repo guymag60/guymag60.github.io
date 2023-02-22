@@ -237,32 +237,24 @@ li a{
 }
 }
 
+
 @media screen and (max-width:370px){
     .images img{
         max-width: 70%;
     }
-
+    
     .images2 img{
         max-width: 70%;
     }
-
+    
     /* img .capture{
         min-width: 50%;
     } */
 }
 
-
-/* @media screen and (max-width: 900px) {
-    nav{
-        justify-content: center;
+@media screen and (max-width:650px) {
+     .capture{
+        width: 300px;
     }
+}
 
-    img{
-        min-width: 100%;
-    }
-
-    .images .images2 img{
-        margin: 20px;
-    }
-   
-} */

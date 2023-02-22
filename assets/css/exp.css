@@ -110,19 +110,7 @@ footer{
 }
 
 /* *******************************RESPONSIVE********************************************** */
-/* @media screen and (max-width: 700px) {
-    nav{
-        justify-content: center;
-    }
 
-    img{
-        min-width: 110%;
-    } */
-    /* .images{
-       display: flex;
-       flex-wrap: wrap;
-       align-content: space-around;
-    } */
     @media screen and (max-width: 1000px){
         .images2 img{
             max-width: 450%;
@@ -130,10 +118,7 @@ footer{
     }
     
     @media screen and (max-width: 750px){
-        /* .nav-links{
-            padding: 0;
-        } */
-        
+                
         main{
             margin: 100px 40px;
         }
